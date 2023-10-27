@@ -3,7 +3,7 @@
 </script>
 
 <div id="header">
-    <h1>Fényképész úr</h1>
+    <a class="title" href="{base}/">Fényképész úr</a>
     <div id="links">
         <a href="{base}/">Képvásárlás</a>
         <a href="{base}/">Blog</a>
@@ -12,11 +12,6 @@
 </div>
 
 <style lang="scss">
-    //testing
-    :global(body) {
-        background-color: black;
-    }
-
     #header {
         width: 100%;
         display: flex;
@@ -25,7 +20,7 @@
         padding: 1rem;
         color: white;
 
-        h1 {
+        .title {
             font-family: "special elite", sans-serif;
             font-size: 4rem;
         }
