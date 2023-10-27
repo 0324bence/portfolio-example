@@ -34,7 +34,12 @@
 <div id="main-body">
     <section class="fullpage" id="first" use:observer>
         <Header />
-        <div class="content"><h1>asd</h1></div>
+        <div class="content">
+            <div id="quote">
+                <span>A Természet az egyetlen könyv, amely minden lapján nagy tartalmat nyújt nekünk.</span>
+                <span>- Johann Wolfgang von Goethe</span>
+            </div>
+        </div>
     </section>
     <section class="fullpage" id="second" use:observer>
         <div class="content"><h1>asd</h1></div>
@@ -123,6 +128,26 @@
 
             .content {
                 flex-grow: 1;
+                display: flex;
+                align-items: flex-end;
+                padding: 6%;
+
+                #quote {
+                    color: white;
+                    display: flex;
+                    flex-direction: column;
+                    font-family: "Rozha One", serif;
+                    font-weight: 400;
+                    width: 80%;
+
+                    span:first-child {
+                        font-size: 3rem;
+                    }
+                    span:last-child {
+                        font-size: 2rem;
+                        margin-top: 1rem;
+                    }
+                }
             }
         }
 
