@@ -23,12 +23,17 @@
         display: flex;
         flex-direction: column;
         align-items: stretch;
+        scroll-snap-type: y mandatory;
         position: relative;
 
         //hide scrollbar
+        &::-webkit-scrollbar {
+            display: none;
+        }
 
         .fullpage {
             flex-shrink: 0;
+            scroll-snap-align: start;
             height: 100vh;
             display: flex;
             flex-direction: column;
