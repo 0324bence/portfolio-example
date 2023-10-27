@@ -1,18 +1,74 @@
 <script lang="ts">
     import Header from "../components/Header.svelte";
+    let current = "first";
+    const ratioLimit = 0.522;
+    function observer(node: HTMLElement) {
+        const sectObs = new IntersectionObserver(
+            entries => {
+                entries.forEach(entry => {
+                    //document.querySelector(`[href*='#${entry.target.id}']`).classList.remove("active")
+                    //console.log(entry.target.id, entry.intersectionRatio)
+                    if (entry.isIntersecting /* && entry.intersectionRatio >= ratioLimit */) {
+                        current = entry.target.id;
+                        console.log(current);
+                    }
+                });
+            },
+            { threshold: [0.25 /* , ratioLimit, 0.75 */] }
+        );
+        sectObs.observe(node);
+
+        return {
+            destroy() {
+                sectObs.disconnect();
+            }
+        };
+    }
+    function scrollTo(id: string) {
+        const el = document.getElementById(id);
+        if (!el) return;
+        el.scrollIntoView({ behavior: "smooth" });
+    }
 </script>
 
 <div id="main-body">
-    <section class="fullpage" id="first">
+    <section class="fullpage" id="first" use:observer>
         <Header />
         <div class="content"><h1>asd</h1></div>
     </section>
-    <section class="fullpage" id="second">
+    <section class="fullpage" id="second" use:observer>
         <div class="content"><h1>asd</h1></div>
     </section>
-    <section class="fullpage" id="third">
+    <section class="fullpage" id="third" use:observer>
         <div class="content"><h1>asd</h1></div>
     </section>
+    <div id="scrollstate">
+        <!-- Circle svg -->
+        <button on:click={() => scrollTo("first")}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                <circle cx="10" cy="10" r="10" fill="#000" stroke="#" />
+                {#if current == "first"}
+                    <circle cx="10" cy="10" r="5" fill="#f00" />
+                {/if}
+            </svg>
+        </button>
+        <button on:click={() => scrollTo("second")}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                <circle cx="10" cy="10" r="10" fill="#000" />
+                {#if current == "second"}
+                    <circle cx="10" cy="10" r="5" fill="#f00" />
+                {/if}
+            </svg>
+        </button>
+        <button on:click={() => scrollTo("third")}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                <circle cx="10" cy="10" r="10" fill="#000" />
+                {#if current == "third"}
+                    <circle cx="10" cy="10" r="5" fill="#f00" />
+                {/if}
+            </svg>
+        </button>
+    </div>
 </div>
 
 <style lang="scss">
@@ -25,6 +81,32 @@
         align-items: stretch;
         scroll-snap-type: y mandatory;
         position: relative;
+
+        #scrollstate {
+            position: fixed;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0.3rem;
+            padding: 0.5rem;
+
+            button {
+                background: none;
+                border: none;
+                cursor: pointer;
+                outline: none;
+
+                &:hover {
+                    svg circle:first-child {
+                        fill: #555;
+                    }
+                }
+            }
+        }
 
         //hide scrollbar
         &::-webkit-scrollbar {
