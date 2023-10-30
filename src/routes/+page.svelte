@@ -125,6 +125,9 @@
             display: flex;
             flex-direction: column;
             align-items: stretch;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom;
 
             .content {
                 flex-grow: 1;
