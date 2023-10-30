@@ -5,7 +5,7 @@
 <div id="header">
     <a class="title" href="{base}/">Fényképész úr</a>
     <div id="links">
-        <a href="{base}/">Képvásárlás</a>
+        <a href="{base}/Gallery/    ">Képvásárlás</a>
         <a href="{base}/">Blog</a>
         <a href="{base}/">Kosár</a>
     </div>
