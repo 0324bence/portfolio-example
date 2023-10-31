@@ -42,7 +42,104 @@
         </div>
     </section>
     <section class="fullpage" id="second" use:observer>
-        <div class="content"><h1>asd</h1></div>
+        <div class="content">
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-content">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, aliquid rerum vitae placeat
+                            cumque debitis totam possimus temporibus, fugit dicta doloribus numquam dignissimos. Sed
+                            provident cum fugiat ex. Magnam, amet!
+                        </p>
+                        <p>
+                            Quo rerum hic ipsum saepe nostrum reprehenderit tempore vero quasi quaerat amet. Repellat
+                            voluptatibus consectetur, alias beatae eaque distinctio ex aliquid deleniti iusto libero
+                            corrupti nobis dolores facilis molestiae incidunt?
+                        </p>
+                        <p>
+                            Quaerat earum, ipsum iste molestias, deleniti explicabo expedita aliquam libero rem vel
+                            magni accusantium velit quisquam ad eveniet incidunt, labore ea aperiam. Vel sapiente at
+                            minima facere nesciunt natus id.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat cumque nulla itaque quos
+                            laudantium nostrum nisi quasi fugiat numquam qui ipsa, ad vitae, consequatur tempore
+                            expedita amet quibusdam molestiae harum?
+                        </p>
+                    </div>
+                    <div class="bar">
+                        <div class="image">
+                            <img
+                                src="https://cdn.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg"
+                                alt="card"
+                            />
+                        </div>
+                        <span class="title">Rólam</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, aliquid rerum vitae placeat
+                            cumque debitis totam possimus temporibus, fugit dicta doloribus numquam dignissimos. Sed
+                            provident cum fugiat ex. Magnam, amet!
+                        </p>
+                        <p>
+                            Quo rerum hic ipsum saepe nostrum reprehenderit tempore vero quasi quaerat amet. Repellat
+                            voluptatibus consectetur, alias beatae eaque distinctio ex aliquid deleniti iusto libero
+                            corrupti nobis dolores facilis molestiae incidunt?
+                        </p>
+                        <p>
+                            Quaerat earum, ipsum iste molestias, deleniti explicabo expedita aliquam libero rem vel
+                            magni accusantium velit quisquam ad eveniet incidunt, labore ea aperiam. Vel sapiente at
+                            minima facere nesciunt natus id.
+                        </p>
+                    </div>
+                    <div class="bar">
+                        <div class="image">
+                            <img
+                                src="https://cdn.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg"
+                                alt="card"
+                            />
+                        </div>
+                        <span class="title">Rólam</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, aliquid rerum vitae placeat
+                            cumque debitis totam possimus temporibus, fugit dicta doloribus numquam dignissimos. Sed
+                            provident cum fugiat ex. Magnam, amet!
+                        </p>
+                        <p>
+                            Quo rerum hic ipsum saepe nostrum reprehenderit tempore vero quasi quaerat amet. Repellat
+                            voluptatibus consectetur, alias beatae eaque distinctio ex aliquid deleniti iusto libero
+                            corrupti nobis dolores facilis molestiae incidunt?
+                        </p>
+                        <p>
+                            Quaerat earum, ipsum iste molestias, deleniti explicabo expedita aliquam libero rem vel
+                            magni accusantium velit quisquam ad eveniet incidunt, labore ea aperiam. Vel sapiente at
+                            minima facere nesciunt natus id.
+                        </p>
+                        <p>
+                            Voluptatum ratione amet ducimus soluta saepe facere odit repellendus. Quibusdam tempora
+                            iusto temporibus ipsum libero, numquam necessitatibus recusandae sunt itaque quae. Labore
+                            perspiciatis odio id commodi voluptatem tempore dolor neque.
+                        </p>
+                    </div>
+                    <div class="bar">
+                        <div class="image">
+                            <img
+                                src="https://cdn.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg"
+                                alt="card"
+                            />
+                        </div>
+                        <span class="title">Rólam</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <section class="fullpage" id="third" use:observer>
         <div class="content"><h1>asd</h1></div>
@@ -133,7 +230,67 @@
                 flex-grow: 1;
                 display: flex;
                 align-items: flex-end;
-                padding: 6%;
+                padding: 8rem 4rem 8rem 4rem;
+
+                .card-container {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .card {
+                        background-color: hsla(0, 0%, 12%, 0.8);
+                        width: 30%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+
+                        .card-content {
+                            flex: 11;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            font-family: "Jost", sans-serif;
+                            font-size: 1.2rem;
+                            color: white;
+                            padding: 2rem 2rem 0 2rem;
+                        }
+
+                        .bar {
+                            flex: 1;
+                            background-color: hsl(118, 47%, 15%, 0.8);
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-end;
+                            position: relative;
+                            font-family: "Jost", sans-serif;
+                            color: white;
+                            font-size: 2rem;
+                            padding: 0 4rem 0 4rem;
+
+                            .image {
+                                position: absolute;
+                                left: 10%;
+                                bottom: 30%;
+                                width: 7.5rem;
+                                height: 7.5rem;
+                                border-radius: 50%;
+                                overflow: hidden;
+                                display: grid;
+                                place-items: center;
+                                border: 0.2rem solid #fff;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+                            }
+                        }
+                    }
+                }
 
                 #quote {
                     color: white;
