@@ -56,15 +56,23 @@
                             voluptatibus consectetur, alias beatae eaque distinctio ex aliquid deleniti iusto libero
                             corrupti nobis dolores facilis molestiae incidunt?
                         </p>
+                    </div>
+                    <div class="bar">
+                        <div class="image">
+                            <img
+                                src="https://cdn.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg"
+                                alt="card"
+                            />
+                        </div>
+                        <span class="title">Rólam</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
                         <p>
-                            Quaerat earum, ipsum iste molestias, deleniti explicabo expedita aliquam libero rem vel
-                            magni accusantium velit quisquam ad eveniet incidunt, labore ea aperiam. Vel sapiente at
-                            minima facere nesciunt natus id.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat cumque nulla itaque quos
-                            laudantium nostrum nisi quasi fugiat numquam qui ipsa, ad vitae, consequatur tempore
-                            expedita amet quibusdam molestiae harum?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, aliquid rerum vitae placeat
+                            cumque debitis totam possimus temporibus, fugit dicta doloribus numquam dignissimos. Sed
+                            provident cum fugiat ex. Magnam, amet!
                         </p>
                     </div>
                     <div class="bar">
@@ -88,44 +96,6 @@
                             Quo rerum hic ipsum saepe nostrum reprehenderit tempore vero quasi quaerat amet. Repellat
                             voluptatibus consectetur, alias beatae eaque distinctio ex aliquid deleniti iusto libero
                             corrupti nobis dolores facilis molestiae incidunt?
-                        </p>
-                        <p>
-                            Quaerat earum, ipsum iste molestias, deleniti explicabo expedita aliquam libero rem vel
-                            magni accusantium velit quisquam ad eveniet incidunt, labore ea aperiam. Vel sapiente at
-                            minima facere nesciunt natus id.
-                        </p>
-                    </div>
-                    <div class="bar">
-                        <div class="image">
-                            <img
-                                src="https://cdn.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg"
-                                alt="card"
-                            />
-                        </div>
-                        <span class="title">Rólam</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, aliquid rerum vitae placeat
-                            cumque debitis totam possimus temporibus, fugit dicta doloribus numquam dignissimos. Sed
-                            provident cum fugiat ex. Magnam, amet!
-                        </p>
-                        <p>
-                            Quo rerum hic ipsum saepe nostrum reprehenderit tempore vero quasi quaerat amet. Repellat
-                            voluptatibus consectetur, alias beatae eaque distinctio ex aliquid deleniti iusto libero
-                            corrupti nobis dolores facilis molestiae incidunt?
-                        </p>
-                        <p>
-                            Quaerat earum, ipsum iste molestias, deleniti explicabo expedita aliquam libero rem vel
-                            magni accusantium velit quisquam ad eveniet incidunt, labore ea aperiam. Vel sapiente at
-                            minima facere nesciunt natus id.
-                        </p>
-                        <p>
-                            Voluptatum ratione amet ducimus soluta saepe facere odit repellendus. Quibusdam tempora
-                            iusto temporibus ipsum libero, numquam necessitatibus recusandae sunt itaque quae. Labore
-                            perspiciatis odio id commodi voluptatem tempore dolor neque.
                         </p>
                     </div>
                     <div class="bar">
