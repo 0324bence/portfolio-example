@@ -112,7 +112,29 @@
         </div>
     </section>
     <section class="fullpage" id="third" use:observer>
-        <div class="content"><h1>asd</h1></div>
+        <div class="content">
+            <div id="contacts-container">
+                <div id="form-container" class="contacts">
+                    <form action="">
+                        <h1>Kapcsolatfelvétel</h1>
+                        <div class="input-group">
+                            <label for="name">Név:</label>
+                            <input type="text" name="name" />
+                        </div>
+                        <div class="input-group">
+                            <label for="email">E-mail-cím:</label>
+                            <input type="email" name="email" />
+                        </div>
+                        <div class="input-group" id="big">
+                            <label for="message">Üzenet:</label>
+                            <textarea id="" name="message" />
+                        </div>
+                        <button type="submit">Küldés</button>
+                    </form>
+                </div>
+                <div id="text-container" class="contacts" />
+            </div>
+        </div>
     </section>
     <div id="scrollstate">
         <!-- Circle svg -->
@@ -200,7 +222,30 @@
                 flex-grow: 1;
                 display: flex;
                 align-items: flex-end;
-                padding: 8rem 4rem 8rem 4rem;
+
+                #contacts-container {
+                    padding: 2rem 4rem 2rem 4rem;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    font-family: "Jost", sans-serif;
+
+                    .contacts {
+                        width: 48%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        font-family: "Jost", sans-serif;
+                        font-size: 1.2rem;
+                        color: white;
+                        background-color: hsla(0, 0%, 12%, 0.8);
+                    }
+                }
 
                 .card-container {
                     width: 100%;
@@ -209,6 +254,7 @@
                     flex-direction: row;
                     align-items: center;
                     justify-content: space-between;
+                    padding: 8rem 4rem 8rem 4rem;
 
                     .card {
                         background-color: hsla(0, 0%, 12%, 0.8);
@@ -269,6 +315,7 @@
                     font-family: "Rozha One", serif;
                     font-weight: 400;
                     width: 80%;
+                    margin: 8rem 4rem 8rem 4rem;
 
                     span:first-child {
                         font-size: 3rem;
