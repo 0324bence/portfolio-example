@@ -1,5 +1,6 @@
 <script lang="ts">
     import Header from "../components/Header.svelte";
+    import { base } from "$app/paths";
     let current = "first";
     const ratioLimit = 0.522;
     function observer(node: HTMLElement) {
@@ -115,7 +116,7 @@
         <div class="content">
             <div id="contacts-container">
                 <div id="form-container" class="contacts">
-                    <form action="">
+                    <form action="{base}/#third" method="POST">
                         <h1>Kapcsolatfelvétel</h1>
                         <div class="input-group">
                             <label for="name">Név:</label>
@@ -231,7 +232,6 @@
                     flex-direction: row;
                     align-items: center;
                     justify-content: space-between;
-                    font-family: "Jost", sans-serif;
 
                     .contacts {
                         width: 48%;
@@ -244,6 +244,82 @@
                         font-size: 1.2rem;
                         color: white;
                         background-color: hsla(0, 0%, 12%, 0.8);
+
+                        form {
+                            display: flex;
+                            width: 100%;
+                            height: 100%;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: space-between;
+                            padding: 2.5rem;
+                            gap: 1rem;
+
+                            h1 {
+                                font-size: 4rem;
+                                font-weight: normal;
+                            }
+
+                            .input-group {
+                                width: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                justify-content: flex-start;
+
+                                label {
+                                    font-size: 1.5rem;
+                                }
+
+                                input {
+                                    width: 100%;
+                                    height: 2.5rem;
+                                    border: none;
+                                    outline: none;
+                                    background-color: hsla(0, 0%, 66%, 0.4);
+
+                                    &:focus {
+                                        background-color: hsla(0, 0%, 66%, 0.6);
+                                    }
+                                }
+                            }
+
+                            button {
+                                border: none;
+                                outline: none;
+                                background-color: hsla(0, 0%, 26%, 0.8);
+                                color: #fff;
+                                padding: 1.2rem;
+                                width: 30%;
+                                font-size: 1.5rem;
+                                font-weight: normal;
+                                cursor: pointer;
+
+                                &:hover {
+                                    background-color: hsla(0, 0%, 26%, 1);
+                                }
+                            }
+
+                            #big {
+                                flex-grow: 1;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                justify-content: flex-start;
+
+                                textarea {
+                                    width: 100%;
+                                    background-color: hsla(0, 0%, 66%, 0.4);
+                                    border: none;
+                                    outline: none;
+                                    flex-grow: 1;
+
+                                    &:focus {
+                                        background-color: hsla(0, 0%, 66%, 0.6);
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
 
