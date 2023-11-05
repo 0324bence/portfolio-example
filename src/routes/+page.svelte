@@ -33,7 +33,12 @@
 </script>
 
 <div id="main-body">
-    <section class="fullpage" id="first" use:observer>
+    <section
+        class="fullpage"
+        id="first"
+        use:observer
+        style="background-image: url('{base}/images/main-page/first.webp');"
+    >
         <Header />
         <div class="content">
             <div id="quote">
@@ -42,7 +47,12 @@
             </div>
         </div>
     </section>
-    <section class="fullpage" id="second" use:observer>
+    <section
+        class="fullpage"
+        id="second"
+        use:observer
+        style="background-image: url('{base}/images/main-page/second.webp');"
+    >
         <div class="content">
             <div class="card-container">
                 <div class="card">
@@ -112,7 +122,12 @@
             </div>
         </div>
     </section>
-    <section class="fullpage" id="third" use:observer>
+    <section
+        class="fullpage"
+        id="third"
+        use:observer
+        style="background-image: url('{base}/images/main-page/third.webp');"
+    >
         <div class="content">
             <div id="contacts-container">
                 <div id="form-container" class="contacts">
@@ -467,14 +482,14 @@
             }
         }
 
-        #first {
-            background-image: url("./images/main-page/first.webp");
-        }
-        #second {
-            background-image: url("./images/main-page/second.webp");
-        }
-        #third {
-            background-image: url("./images/main-page/third.webp");
-        }
+        // #first {
+        //     background-image: url("./images/main-page/first.webp");
+        // }
+        // #second {
+        //     background-image: url("./images/main-page/second.webp");
+        // }
+        // #third {
+        //     background-image: url("./images/main-page/third.webp");
+        // }
     }
 </style>
