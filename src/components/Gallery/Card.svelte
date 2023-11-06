@@ -52,24 +52,26 @@
     }
     .card-title{
         flex: 1.4;
-        display: inline;
-        padding-left: 6px;
+        display: flex;
+        padding-left: 9px;
         font-weight: 500;
         overflow: hidden;
+        align-items: center;
+        justify-content: start;
+        font-size: 1.1em;
     }
     .card-price{
         flex: 0.6;
-        display: inline-block;
+        display: flex;
+        align-items: center;
+        justify-content: end;
         text-align: right;
-        padding-right: 6px;
+        padding-right: 9px;
         font-weight: 600;
-        font-size: 0.8em;
+        font-size: 0.9em;
 
     }
 
-    .card-price p, .card-title p{
-        line-height: 2.3em !important;
-    }
     
 
 
