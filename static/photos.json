@@ -1,0 +1,8 @@
+[
+    {
+        "image": "photos/1.jpg",
+        "desc": "Lorem ipsum",
+        "price": "$20",
+        "category": "category1"
+    }
+]
