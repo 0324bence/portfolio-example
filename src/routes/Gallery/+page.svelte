@@ -9,7 +9,7 @@
 
 <div class="body">
     {#each Array.from(Array(3).keys()) as _}
-        <Card image="0001" title="Kutya" price="$5.00"/>
+        <Card imageID="0001" title="Kutya" price="$5.00"/>
     {/each}
 
 

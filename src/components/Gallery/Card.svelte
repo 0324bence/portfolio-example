@@ -3,24 +3,24 @@
     import { base } from "$app/paths"
     export let title:string;
     export let price:string;
-    export let image:string;
+    export let imageID:string;
 </script>
 
 
+<a href="gallery/{imageID}" class="card-link">
+    <div class="card" style="background-image: url('{base}/images/photos/{imageID}.webp');">
+        <div class="card-belt">
+            <div class="card-title">
+                <p> {title}</p>
+            </div>
+            <div class="card-price">
+                <p>{price}</p>
+            </div>
+            
 
-<div class="card" style="background-image: url('{base}/images/photos/{image}.webp');">
-    <div class="card-belt">
-        <div class="card-title">
-            <p> {title}</p>
         </div>
-        <div class="card-price">
-            <p>{price}</p>
-        </div>
-        
-
     </div>
-</div>
-
+</a>
 
 <style lang="scss">
 
@@ -28,9 +28,12 @@
 
     * {
         font-family:'Rubik', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none !important;
+        color: black;
     }
 
     .card{
+
         min-width: 18em;
         max-width: 22em;
         aspect-ratio: 16/9;
