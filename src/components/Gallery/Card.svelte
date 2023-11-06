@@ -23,16 +23,16 @@
 
 
 <style lang="scss">
-    div{
-        border: solid black 1px;
-    }
-    
+
+
     .card{
         min-width: 18em;
         max-width: 20em;
         display: flex;
         background-size: 100%;
         margin: 5px;
+        border-radius: 6px;
+        border: solid 1px black;
     }
     .card-belt{
         display: flex;
@@ -40,17 +40,22 @@
         justify-content: space-between;
         align-self: flex-end;
         width: 100%;
-        
+        height: 2.3em;
+        background-color: rgba($color: #fff, $alpha: 0.70);
+        border-radius: 0px 0px 6px 6px;
     }
     .card-title{
         flex: 1;
         display: inline;
-
+        padding-left: 6px;
+        line-height: 2.3em;
     }
     .card-price{
         flex: 1;
         display: inline-block;
         text-align: right;
+        padding-right: 6px;
+        line-height: 2.3em;
 
     }
     
