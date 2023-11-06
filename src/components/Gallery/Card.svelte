@@ -24,10 +24,16 @@
 
 <style lang="scss">
 
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&family=Share+Tech&display=swap');
+
+    * {
+        font-family:'Rubik', 'Arial Narrow', Arial, sans-serif;
+    }
 
     .card{
         min-width: 18em;
         max-width: 20em;
+        aspect-ratio: 16/9;
         display: flex;
         background-size: 100%;
         margin: 5px;
@@ -45,24 +51,27 @@
         border-radius: 0px 0px 6px 6px;
     }
     .card-title{
-        flex: 1;
+        flex: 1.4;
         display: inline;
         padding-left: 6px;
-        line-height: 2.3em;
+        font-weight: 500;
+        overflow: hidden;
     }
     .card-price{
-        flex: 1;
+        flex: 0.6;
         display: inline-block;
         text-align: right;
         padding-right: 6px;
-        line-height: 2.3em;
+        font-weight: 600;
+        font-size: 0.8em;
 
     }
-    
-    .card{
-        height: 160px;
-        width: 260px;
+
+    .card-price p, .card-title p{
+        line-height: 2.3em !important;
     }
+    
+
 
 
 </style>
