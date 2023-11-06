@@ -7,7 +7,7 @@
         const sectObs = new IntersectionObserver(
             entries => {
                 entries.forEach(entry => {
-                    //document.querySelector(`[href*='#${entry.target.id}']`).classList.remove("active")
+                  //document.querySelector(`[href*='#${entry.target.id}']`).classList.remove("active")
                     //console.log(entry.target.id, entry.intersectionRatio)
                     if (entry.isIntersecting /* && entry.intersectionRatio >= ratioLimit */) {
                         current = entry.target.id;
