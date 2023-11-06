@@ -46,7 +46,8 @@
         justify-content: space-between;
         align-self: flex-end;
         width: 100%;
-        height: 2.3em;
+        max-height: 2.9em;
+        height: 23%;
         background-color: rgba($color: #fff, $alpha: 0.70);
         border-radius: 0px 0px 6px 6px;
     }
