@@ -5,4 +5,4 @@
 </script>
 
 
-<Card/>
+<Card image="0001" title="Kutya" price="$5"/>

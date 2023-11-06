@@ -1,17 +1,22 @@
 
+<script lang="ts">
+    import { base } from "$app/paths"
+    export let title:string;
+    export let price:string;
+    export let image:string;
+</script>
 
 
 
-
-<div class="card">
+<div class="card" style="background-image: url('{base}/images/photos/{image}.webp');">
     <div class="card-belt">
         <div class="card-title">
-            <p>Kép címe</p>
+            <p> {title}</p>
         </div>
         <div class="card-price">
-            <p>$20.0</p>
+            <p>{price}</p>
         </div>
-
+        
 
     </div>
 </div>
@@ -23,13 +28,19 @@
     }
     
     .card{
-        width: 200px;
-
+        min-width: 18em;
+        max-width: 20em;
+        display: flex;
+        background-size: 100%;
+        margin: 5px;
     }
-    .belt{
+    .card-belt{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-self: flex-end;
+        width: 100%;
+        
     }
     .card-title{
         flex: 1;
@@ -43,6 +54,10 @@
 
     }
     
+    .card{
+        height: 160px;
+        width: 260px;
+    }
 
 
 </style>
