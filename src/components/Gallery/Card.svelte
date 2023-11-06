@@ -32,10 +32,10 @@
 
     .card{
         min-width: 18em;
-        max-width: 20em;
+        max-width: 22em;
         aspect-ratio: 16/9;
         display: flex;
-        background-size: 100%;
+        background-size: contain;
         margin: 5px;
         border-radius: 6px;
         border: solid 1px black;

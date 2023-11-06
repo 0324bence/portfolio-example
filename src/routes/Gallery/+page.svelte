@@ -4,7 +4,25 @@
 
 </script>
 
+<div class="body">
+    {#each Array.from(Array(3).keys()) as _}
+        <Card image="0001" title="Kutya" price="$5.00"/>
+    {/each}
 
-<Card image="0001" title="Kutya" price="$5.00"/>
-<Card image="0001" title="Kutya" price="$5.00"/>
-<Card image="0001" title="Kutya" price="$5.00"/>
+
+</div>
+
+
+
+
+<style lang="scss">
+    .body{
+        display: flex;
+        border: red solid 1px;
+        width: 80vw;
+        height: 100vh;
+        margin-left: auto;
+        margin-right: auto
+    }
+
+</style>
