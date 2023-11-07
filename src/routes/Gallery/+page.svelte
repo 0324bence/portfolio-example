@@ -20,6 +20,11 @@
         {#each data as item}
             <Card imageID={item.id} title={item.title} price={item.price} image={item.image} />
         {/each}
+        <button
+            on:click={() => {
+                addToBasket(data[0]);
+            }}>Asd</button
+        >
     {/await}
 </div>
 
