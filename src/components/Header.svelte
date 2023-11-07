@@ -7,7 +7,7 @@
     <div id="links">
         <a href="{base}/Gallery/    ">Képvásárlás</a>
         <a href="{base}/">Blog</a>
-        <a href="{base}/">Kosár</a>
+        <a href="{base}/basket">Kosár</a>
     </div>
 </div>
 
