@@ -41,6 +41,8 @@
             return width / 16;
             } else if (options.unit === 'rem') {
             return width / 8;
+            } else if (options.unit === 'px') {
+            return width / 5;
             } else {
             throw new Error('Invalid unit specified.');
             }
@@ -49,9 +51,6 @@
         return width;
         }
 
-        // Usage:
-        const colWidth = getColWidth('ABC', { round: 'up', unit: 'em' });
-        console.log('Column Width:', colWidth, 'em');
 </script>
 
 <Header />
