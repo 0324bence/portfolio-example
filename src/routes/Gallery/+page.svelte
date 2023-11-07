@@ -1,29 +1,29 @@
 <script lang="ts">
     import Card from "../../components/Gallery/Card.svelte";
     import Header from "../../components/Header.svelte";
+    import { base } from "$app/paths";
 
-
+    const dataPromise = fetch(`${base}/photos.json`).then(res => res.json());
 </script>
 
-<Header/>
+<Header />
 
 <div class="body">
-    {#each Array.from(Array(3).keys()) as _}
-        <Card imageID="0001" title="Kutya" price="$5.00"/>
-    {/each}
-
-
+    {#await dataPromise}
+        <p>Loading...</p>
+    {:then data}
+        {#each data as item}
+            <Card imageID={item.id} title={item.title} price={item.price} image={item.image} />
+        {/each}
+    {/await}
 </div>
 
-
-
-
 <style lang="scss">
-    :global(body){
+    :global(body) {
         background-color: gray;
     }
 
-    .body{
+    .body {
         display: flex;
         border: red solid 1px;
         width: 80vw;
@@ -31,5 +31,4 @@
         margin-left: auto;
         margin-right: auto;
     }
-
 </style>
