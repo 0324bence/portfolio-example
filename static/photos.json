@@ -1,0 +1,38 @@
+[
+    {
+        "image": "0001.webp",
+        "title": "Lorem ipsum title",
+        "desc": "Lorem ipsum",
+        "price": "$20"
+    },
+    {
+        "image": "0001.webp",
+        "title": "Lorem ipsum title",
+        "desc": "Lorem ipsum",
+        "price": "$20"
+    },
+    {
+        "image": "0001.webp",
+        "title": "Lorem ipsum title",
+        "desc": "Lorem ipsum",
+        "price": "$20"
+    },
+    {
+        "image": "0001.webp",
+        "title": "Lorem ipsum title",
+        "desc": "Lorem ipsum",
+        "price": "$20"
+    },
+    {
+        "image": "0001.webp",
+        "title": "Lorem ipsum title",
+        "desc": "Lorem ipsum",
+        "price": "$20"
+    },
+    {
+        "image": "0001.webp",
+        "title": "Lorem ipsum title",
+        "desc": "Lorem ipsum",
+        "price": "$20"
+    }
+]
