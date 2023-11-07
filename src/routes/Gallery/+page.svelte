@@ -5,7 +5,7 @@
     import { basket } from "$lib/stores/basket";
 
     function addToBasket(entry: object) {
-        basket.update(item => [...item, entry]);
+        basket.update((item: any) => [...item, entry]);
     }
 
     const dataPromise = fetch(`${base}/photos.json`).then(res => res.json());
@@ -30,6 +30,7 @@
 
     .body {
         display: flex;
+        flex-wrap: wrap;
         border: red solid 1px;
         width: 80vw;
         height: 100vh;
