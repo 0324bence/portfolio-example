@@ -2,6 +2,11 @@
     import Card from "../../components/Gallery/Card.svelte";
     import Header from "../../components/Header.svelte";
     import { base } from "$app/paths";
+    import { basket } from "$lib/stores/basket";
+
+    function addToBasket(entry: object) {
+        basket.update(item => [...item, entry]);
+    }
 
     const dataPromise = fetch(`${base}/photos.json`).then(res => res.json());
 </script>
