@@ -15,6 +15,11 @@
     
 
 </script>
+
+<header>
+    <title>Képvásárlás | Fényképész úr</title>
+</header>
+
 <div class="htm" style="background-image: url('{base}/images/background.webp');">
     <Header />
 
@@ -37,6 +42,7 @@
 
     .htm{
         background-size: 100%;
+        height: 100%;
     }
 
     .body {

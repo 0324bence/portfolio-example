@@ -32,6 +32,10 @@
     }
 </script>
 
+<header>
+    <title>Fényképész úr</title>
+</header>
+
 <div id="main-body">
     <section
         class="fullpage"
