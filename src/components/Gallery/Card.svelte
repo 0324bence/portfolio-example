@@ -30,7 +30,7 @@
 
     .card-link{
         width: 18em !important;
-        height: 10.5em !important;
+        height: 11em !important;
         margin: 5px;
     }
 
@@ -38,7 +38,7 @@
         width: 100%;
         height: 100%;
         display: flex;
-        background-size: contain;
+        background-size: 100%;
 
         border-radius: 6px;
         border: solid 1px black;

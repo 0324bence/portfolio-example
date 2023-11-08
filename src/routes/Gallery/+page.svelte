@@ -42,5 +42,6 @@
         height: 100vh;
         margin-left: auto;
         margin-right: auto;
+        height: auto;
     }
 </style>
