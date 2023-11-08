@@ -238,5 +238,125 @@
         "title": "Közelgő vihar",
         "desc": "Lorem ipsum",
         "price": "$20"
+    },
+    {
+        "image": "0001.webp",
+        "title": "Fehér buldog",
+        "desc": "Lorem ipsum",
+        "price": "$20"
+    },
+    {
+        "image": "0002.webp",
+        "title": "Vízi madár",
+        "desc": "Lorem ipsum",
+        "price": "$20"
+    },
+    {
+        "image": "0003.webp",
+        "title": "Felhős tenger",
+        "desc": "Lorem ipsum",
+        "price": "$20"
+    },
+    {
+        "image": "0004.webp",
+        "title": "Buborék",
+        "desc": "Lorem ipsum",
+        "price": "$20"
+    },
+    {
+        "image": "0005.webp",
+        "title": "Teás csésze",
+        "desc": "Lorem ipsum",
+        "price": "$20"
+    },
+    {
+        "image": "0006.webp",
+        "title": "Tóparti faág",
+        "desc": "Lorem ipsum",
+        "price": "$20"
+    },
+    {
+        "image": "0007.webp",
+        "title": "Merre menjek?",
+        "desc": "Lorem ipsum",
+        "price": "$20"
+    },
+    {
+        "image": "0008.webp",
+        "title": "Lépcső",
+        "desc": "Lorem ipsum",
+        "price": "$20"
+    },
+    {
+        "image": "0009.webp",
+        "title": "Afrikai földút",
+        "desc": "Lorem ipsum",
+        "price": "$20"
+    },
+    {
+        "image": "0010.webp",
+        "title": "Gondolatok",
+        "desc": "Lorem ipsum",
+        "price": "$20"
+    },
+    {
+        "image": "0011.webp",
+        "title": "Macskaszem",
+        "desc": "Lorem ipsum",
+        "price": "$20"
+    },
+    {
+        "image": "0012.webp",
+        "title": "Görögörszág",
+        "desc": "Lorem ipsum",
+        "price": "$20"
+    },
+    {
+        "image": "0013.webp",
+        "title": "Villanykörte",
+        "desc": "Lorem ipsum",
+        "price": "$20"
+    },
+    {
+        "image": "0014.webp",
+        "title": "Bevásárlás",
+        "desc": "Lorem ipsum",
+        "price": "$20"
+    },
+    {
+        "image": "0015.webp",
+        "title": "Digitális munka",
+        "desc": "Lorem ipsum",
+        "price": "$20"
+    },
+    {
+        "image": "0016.webp",
+        "title": "Írógép",
+        "desc": "Lorem ipsum",
+        "price": "$20"
+    },
+    {
+        "image": "0017.webp",
+        "title": "Mikrofon",
+        "desc": "Lorem ipsum",
+        "price": "$20"
+    },
+    {
+        "image": "0018.webp",
+        "title": "Olvasószemüveg",
+        "desc": "Lorem ipsum",
+        "price": "$20"
+    },
+    {
+        "image": "0019.webp",
+        "title": "Zsebóra",
+        "desc": "Lorem ipsum",
+        "price": "$20"
+    },
+    {
+        "image": "0020.webp",
+        "title": "Közelgő vihar",
+        "desc": "Lorem ipsum",
+        "price": "$20"
     }
 ]

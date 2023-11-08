@@ -51,7 +51,7 @@
         width: 100%;
         max-height: 2.9em;
         height: 23%;
-        background-color: rgba($color: #fff, $alpha: 0.7);
+        background-color: rgba($color: #fff, $alpha: 0.78);
         border-radius: 0px 0px 6px 6px;
     }
     .card-title {
