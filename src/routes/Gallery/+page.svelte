@@ -73,4 +73,23 @@
         margin-right: auto;
         height: auto;
     }
+
+    // d↓
+    .image {
+        width: 100px;
+        height: 100px;
+        background-color: #3498db;
+        border: 2px solid #e74c3c;
+        border-radius: 5px;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        transition: transform 0.3s ease-in-out;
+    }
+
+
 </style>
