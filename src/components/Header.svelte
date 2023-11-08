@@ -31,7 +31,7 @@
         #links {
             display: flex;
             align-items: center;
-            width: 220px;
+            width: 225px;
             justify-content: space-around;
             font-family: "rubik", sans-serif;
             font-size: 1.5rem;

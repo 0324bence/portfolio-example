@@ -42,12 +42,13 @@
 
     .htm{
         background-size: 100%;
+        background-attachment: fixed;
         height: 100%;
+        padding-bottom: 60px;
     }
 
     .body {
         margin-top: 40px;
-        margin-bottom: 60px;
         display:flex;
         align-content: flex-start;
         justify-content: center;
