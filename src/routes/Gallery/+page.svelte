@@ -32,7 +32,10 @@
     }
 
     .body {
-
+        margin-top: 40px;
+        display:flex;
+        align-content: flex-start;
+        justify-content: center;
         flex-wrap: wrap;
         border: red solid 1px;
         width: 80vw;

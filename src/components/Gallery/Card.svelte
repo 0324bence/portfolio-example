@@ -29,8 +29,8 @@
     }
 
     .card-link{
-        width: 20em !important;
-        height: 12em !important;
+        width: 18em !important;
+        height: 10.5em !important;
         margin: 5px;
     }
 
