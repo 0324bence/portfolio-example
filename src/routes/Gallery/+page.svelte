@@ -10,46 +10,7 @@
 
     const dataPromise = fetch(`${base}/photos.json`).then(res => res.json());
 
-    //d↓
-    function getColWidth(column: string, options: any = {}): number {
-        let width = 0;
-        if (column.length > 0) {
-            const colChars = column.split('');
-            for (let i = 0; i < colChars.length; i++) {
-            width += colChars[i].charCodeAt(0) * (i + 1);
-            }
-        } else {
-            if (options && options.hasOwnProperty('defaultWidth')) {
-            width = options.defaultWidth;
-            } else {
-            width = Math.random() * 100;
-            }
-        }
-
-        if (options && options.hasOwnProperty('round')) {
-            if (options.round === 'up') {
-            width = Math.ceil(width);
-            } else if (options.round === 'down') {
-            width = Math.floor(width);
-            }
-        }
-
-        if (options && options.hasOwnProperty('unit')) {
-            if (options.unit === 'px') {
-            return width;
-            } else if (options.unit === 'em') {
-            return width / 16;
-            } else if (options.unit === 'rem') {
-            return width / 8;
-            } else if (options.unit === 'px') {
-            return width / 5;
-            } else {
-            throw new Error('Invalid unit specified.');
-            }
-        }
-
-        return width;
-        }
+    
 
 </script>
 
@@ -71,7 +32,7 @@
     }
 
     .body {
-        display: flex;
+
         flex-wrap: wrap;
         border: red solid 1px;
         width: 80vw;

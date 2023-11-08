@@ -28,13 +28,18 @@
         color: black;
     }
 
+    .card-link{
+        width: 20em !important;
+        height: 12em !important;
+        margin: 5px;
+    }
+
     .card {
-        min-width: 18em;
-        max-width: 22em;
-        aspect-ratio: 16/9;
+        width: 100%;
+        height: 100%;
         display: flex;
         background-size: contain;
-        margin: 5px;
+
         border-radius: 6px;
         border: solid 1px black;
     }
