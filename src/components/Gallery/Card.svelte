@@ -22,6 +22,19 @@
 <style lang="scss">
     @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&family=Share+Tech&display=swap");
 
+    @media (min-width: 6px) {
+        .card-link{
+            width: 100% !important;
+            aspect-ratio: 16 / 10;
+        }
+    }
+    @media (min-width: 720px) {
+        .card-link{
+            width: 18em !important;
+            height: 11em !important;
+        }
+    }
+
     * {
         font-family: "Rubik", "Arial Narrow", Arial, sans-serif;
         text-decoration: none !important;
@@ -29,8 +42,7 @@
     }
 
     .card-link{
-        width: 18em !important;
-        height: 11em !important;
+
         margin: 5px;
     }
 

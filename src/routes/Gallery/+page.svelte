@@ -36,6 +36,20 @@
 
 
 <style lang="scss">
+
+
+    @media (min-width: 6px) {
+        .body{
+            width: 90vw;
+        }
+    }
+    @media (min-width: 992px) {
+        .body{
+            width: 80vw;
+        }
+    }
+
+
     :global(body) {
         background-color: gray;
     }
@@ -44,16 +58,16 @@
         background-size: 100%;
         background-attachment: fixed;
         height: 100%;
-        padding-bottom: 60px;
+        padding-bottom: 50px;
     }
 
     .body {
-        margin-top: 40px;
+        margin-top: 30px;
         display:flex;
         align-content: flex-start;
         justify-content: center;
         flex-wrap: wrap;
-        width: 80vw;
+
         height: 100vh;
         margin-left: auto;
         margin-right: auto;
