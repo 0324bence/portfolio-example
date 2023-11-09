@@ -117,7 +117,7 @@
         "image": "0020.webp",
         "title": "Közelgő vihar",
         "desc": "Lorem ipsum",
-        "price": "$20"
+        "price": "20"
     },
     {
         "image": "0001.webp",
@@ -237,25 +237,25 @@
         "image": "0020.webp",
         "title": "Közelgő vihar",
         "desc": "Lorem ipsum",
-        "price": "$20"
+        "price": "20"
     },
     {
         "image": "0001.webp",
         "title": "Fehér buldog",
         "desc": "Lorem ipsum",
-        "price": "$20"
+        "price": "20"
     },
     {
         "image": "0002.webp",
         "title": "Vízi madár",
         "desc": "Lorem ipsum",
-        "price": "$20"
+        "price": "20"
     },
     {
         "image": "0003.webp",
         "title": "Felhős tenger",
         "desc": "Lorem ipsum",
-        "price": "$20"
+        "price": "20"
     },
     {
         "image": "0004.webp",
@@ -357,6 +357,6 @@
         "image": "0020.webp",
         "title": "Közelgő vihar",
         "desc": "Lorem ipsum",
-        "price": "$20"
+        "price": "20"
     }
 ]
