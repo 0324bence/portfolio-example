@@ -4,36 +4,92 @@
     import { base } from "$app/paths";
     import { basket } from "$lib/stores/basket";
 
+
     function addToBasket(entry: object) {
-        basket.update(item => [...item, entry]);
+        basket.update((item: any) => [...item, entry]);
     }
 
     const dataPromise = fetch(`${base}/photos.json`).then(res => res.json());
+
+    let bgColor = `url(${base}/images/background.webp)`
+    
+
 </script>
 
-<Header />
+<header>
+    <title>Képvásárlás | Fényképész úr</title>
+</header>
 
-<div class="body">
-    {#await dataPromise}
-        <p>Loading...</p>
-    {:then data}
-        {#each data as item}
-            <Card imageID={item.id} title={item.title} price={item.price} image={item.image} />
-        {/each}
-    {/await}
+<div class="htm" style="background-image: url('{base}/images/background.webp');">
+    <Header />
+
+    <div class="body">
+        {#await dataPromise}
+            <p>Loading...</p>
+        {:then data}
+            {#each data as item}
+                <Card imageID={item.id} title={item.title} price={item.price} image={item.image} />
+            {/each}
+        {/await}
+    </div>
 </div>
 
+
 <style lang="scss">
+
+
+    @media (min-width: 6px) {
+        .body{
+            width: 90vw;
+        }
+    }
+    @media (min-width: 992px) {
+        .body{
+            width: 80vw;
+        }
+    }
+
+
     :global(body) {
         background-color: gray;
     }
 
+    .htm{
+        background-size: 100%;
+        background-attachment: fixed;
+        height: 100%;
+        padding-bottom: 50px;
+    }
+
     .body {
-        display: flex;
-        border: red solid 1px;
-        width: 80vw;
+        margin-top: 30px;
+        display:flex;
+        align-content: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+
         height: 100vh;
         margin-left: auto;
         margin-right: auto;
+        height: auto;
     }
+
+    // d↓
+    .image {
+        width: 100px;
+        height: 100px;
+        background-color: #3498db;
+        border: 2px solid #e74c3c;
+        border-radius: 5px;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        transition: transform 0.3s ease-in-out;
+    }
+
+
 </style>

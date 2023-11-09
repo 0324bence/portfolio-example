@@ -5,9 +5,8 @@
 <div id="header">
     <a class="title" href="{base}/">Fényképész úr</a>
     <div id="links">
-        <a href="{base}/Gallery/    ">Képvásárlás</a>
-        <a href="{base}/">Blog</a>
-        <a href="{base}/basket">Kosár</a>
+        <a href="{base}/Gallery/">Képvásárlás</a>
+        <a href="{base}/">Kosár</a>
     </div>
 </div>
 
@@ -32,7 +31,7 @@
         #links {
             display: flex;
             align-items: center;
-            width: 20%;
+            width: 225px;
             justify-content: space-around;
             font-family: "rubik", sans-serif;
             font-size: 1.5rem;

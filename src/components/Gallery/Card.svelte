@@ -22,19 +22,36 @@
 <style lang="scss">
     @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&family=Share+Tech&display=swap");
 
+    @media (min-width: 6px) {
+        .card-link{
+            width: 100% !important;
+            aspect-ratio: 16 / 10;
+        }
+    }
+    @media (min-width: 720px) {
+        .card-link{
+            width: 18em !important;
+            height: 11em !important;
+        }
+    }
+
     * {
         font-family: "Rubik", "Arial Narrow", Arial, sans-serif;
         text-decoration: none !important;
         color: black;
     }
 
-    .card {
-        min-width: 18em;
-        max-width: 22em;
-        aspect-ratio: 16/9;
-        display: flex;
-        background-size: contain;
+    .card-link{
+
         margin: 5px;
+    }
+
+    .card {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        background-size: 100%;
+
         border-radius: 6px;
         border: solid 1px black;
     }
@@ -46,7 +63,7 @@
         width: 100%;
         max-height: 2.9em;
         height: 23%;
-        background-color: rgba($color: #fff, $alpha: 0.7);
+        background-color: rgba($color: #fff, $alpha: 0.78);
         border-radius: 0px 0px 6px 6px;
     }
     .card-title {
