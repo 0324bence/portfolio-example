@@ -2,36 +2,38 @@
     import { base } from "$app/paths";
     export let title: string;
     export let price: string;
-    export let imageID: string;
     export let image: string;
+    export let click: () => void;
 </script>
 
-<a href="gallery/{imageID}" class="card-link">
+<button on:click={click} class="card-link">
     <div class="card" style="background-image: url('{base}/images/photos/{image}');">
         <div class="card-belt">
             <div class="card-title">
                 <p>{title}</p>
             </div>
             <div class="card-price">
-                <p>{price}</p>
+                <p>
+                    ${price}
+                </p>
             </div>
         </div>
     </div>
-</a>
+</button>
 
 <style lang="scss">
     @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&family=Share+Tech&display=swap");
 
     @media (min-width: 6px) {
-        .card-link{
+        .card-link {
             width: 100% !important;
             aspect-ratio: 16 / 10;
         }
     }
     @media (min-width: 720px) {
-        .card-link{
-            width: 18em !important;
-            height: 11em !important;
+        .card-link {
+            width: 23em !important;
+            height: 14em !important;
         }
     }
 
@@ -41,9 +43,15 @@
         color: black;
     }
 
-    .card-link{
-
-        margin: 5px;
+    .card-link {
+        // margin: 5px;
+        display: block;
+        background: none;
+        border: none;
+        outline: none;
+        padding: 0;
+        padding-inline: 0;
+        cursor: pointer;
     }
 
     .card {

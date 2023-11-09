@@ -49,8 +49,7 @@
         max-width: 22em;
         aspect-ratio: 16/9;
         display: flex;
-        background-size: contain;
-        margin: 5px;
+        background-size: 100%;
         border-radius: 6px;
         border: solid 1px black;
         position: relative;
