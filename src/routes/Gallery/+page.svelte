@@ -4,21 +4,18 @@
     import { base } from "$app/paths";
     import { basket } from "$lib/stores/basket";
 
-
     function addToBasket(entry: object) {
         basket.update((item: any) => [...item, entry]);
     }
 
     const dataPromise = fetch(`${base}/photos.json`).then(res => res.json());
 
-    let bgColor = `url(${base}/images/background.webp)`
-    
-
+    let bgColor = `url(${base}/images/background.webp)`;
 </script>
 
-<header>
+<svelte:head>
     <title>Képvásárlás | Fényképész úr</title>
-</header>
+</svelte:head>
 
 <div class="htm" style="background-image: url('{base}/images/background.webp');">
     <Header />
@@ -34,27 +31,23 @@
     </div>
 </div>
 
-
 <style lang="scss">
-
-
     @media (min-width: 6px) {
-        .body{
+        .body {
             width: 90vw;
         }
     }
     @media (min-width: 992px) {
-        .body{
+        .body {
             width: 80vw;
         }
     }
-
 
     :global(body) {
         background-color: gray;
     }
 
-    .htm{
+    .htm {
         background-size: 100%;
         background-attachment: fixed;
         height: 100%;
@@ -63,7 +56,7 @@
 
     .body {
         margin-top: 30px;
-        display:flex;
+        display: flex;
         align-content: flex-start;
         justify-content: center;
         flex-wrap: wrap;
@@ -73,23 +66,4 @@
         margin-right: auto;
         height: auto;
     }
-
-    // d↓
-    .image {
-        width: 100px;
-        height: 100px;
-        background-color: #3498db;
-        border: 2px solid #e74c3c;
-        border-radius: 5px;
-        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
-        margin: 10px;
-        padding: 10px;
-        text-align: center;
-        color: #fff;
-        font-size: 16px;
-        font-weight: bold;
-        transition: transform 0.3s ease-in-out;
-    }
-
-
 </style>
