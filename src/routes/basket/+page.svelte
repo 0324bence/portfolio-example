@@ -5,6 +5,10 @@
     import Card from "../../components/BasketCard.svelte";
 </script>
 
+<svelte:head>
+    <title>Kosár | Fényképész úr</title>
+</svelte:head>
+
 <div id="basket-container" style="background-image: url('{base}/images/background.webp');">
     <Header />
     <div id="content-container">
