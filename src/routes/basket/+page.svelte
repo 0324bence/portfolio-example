@@ -27,7 +27,10 @@
                         >${$basket.reduce((acc, curr) => acc + Number(curr.price), 0)}</span
                     ></span
                 >
-                <button disabled>Vásárlás</button>
+                <div class="buttons">
+                    <button on:click={() => basket.update(i => [])} class="click">Össes törlése</button>
+                    <button disabled>Vásárlás</button>
+                </div>
             </div>
         </div>
     </div>
@@ -58,14 +61,15 @@
 
         #items {
             width: 100%;
-            height: 100%;
+            max-height: 100%;
             overflow-y: scroll;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            gap: 3rem;
+            gap: 10px;
             justify-content: center;
             align-items: flex-start;
+            flex-wrap: wrap;
 
             //make scrollbar transparent with only a gray handle
             &::-webkit-scrollbar {
@@ -105,6 +109,13 @@
                 font-weight: 600;
             }
 
+            .buttons {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 0.8rem;
+            }
+
             button {
                 background-color: hsla(0, 0%, 0%, 0.7);
                 color: white;
@@ -115,6 +126,13 @@
                 font-weight: 600;
                 cursor: not-allowed;
                 transition: background-color 0.2s ease-in-out;
+            }
+
+            .click {
+                cursor: pointer;
+                &:hover {
+                    background-color: hsla(0, 0%, 0%, 0.8);
+                }
             }
         }
     }
